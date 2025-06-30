@@ -1,21 +1,25 @@
- * {
-     font-family: Arial, sans-serif;
-     margin: 0;
-     color: #003f5c;
- }
-
-.div-img img {
-    padding: 0%;
-    
-
+.div-img {
+    display: flex;
+    align-items: center;
+     background: #0288d1;
 }
 
+ .div-img img {
+    width: 10%;
+     padding: 0%;
+         margin-left: 10px;
+
+
+ }
+ .div-img h1 {
+    width: 90%;
+ }
+
  header h1 {
-     background: #0288d1;
+    
      text-align: center;
      color: #fff;
-     padding: 1rem 0;
-     
+
  }
 
  nav ul {
@@ -43,14 +47,43 @@
      color: #fff;
  }
 
+ 
+ @media (max-width: 768px) {
+     nav ul {
+         list-style: none;
+         display: flex;
+         flex-direction: column;
+         margin-left: -40px;
+     }
+
+     nav ul li {
+         text-align: center;
+         background: antiquewhite;
+         border: 1px solid;
+         margin: 2px;
+     }
+      .result-wrapper {
+         display: grid;
+         gap: 5px;
+         grid-template-rows: repeat(4, 1fr);
+     }
+ }
+ @media (min-width: 768px) {
+     .result-wrapper {
+         display: grid;
+         gap: 5px;
+         grid-template-columns: repeat(4, 1fr);
+     }
+ }
  #Home {
      text-align: center;
      padding: 50px;
      background-color: #b3e5fc;
  }
- #Home marquee{
-    padding: 1rem 0;
-    color: white;
+
+ #Home marquee {
+     padding: 1rem 0;
+     color: white;
  }
 
  #Home h2 {
@@ -119,7 +152,7 @@
 
  .teacher {
      text-align: center !important;
-     
+
  }
 
  .teacher p {
@@ -133,6 +166,7 @@
 
  section {
      padding: 40px 20px;
+     border-radius: 5px;
  }
 
  footer {
@@ -155,10 +189,16 @@
  .facilator-main {
      display: grid;
      grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+     
  }
 
  .facilator-main h2 {
      font-size: 1rem;
+ }
+ .services{
+        text-align: center;
+        background: white;
+        border-radius: 5px;
  }
 
  .services p {
@@ -253,7 +293,9 @@
 
  .result {
      padding: 1rem;
-
+    background: white;
+    border-radius: 5px;
+    text-align: center;
  }
 
  .res {
@@ -273,8 +315,14 @@
  marquee {
      color: #070707;
      font-size: 1.1em;
-     margin-bottom: 20px;
      background-color: #0288d1;
+ }
+ .award-slider {
+   background-color:white;
+   scrollbar-color: rgb(19, 71, 89);
+ }
+ .award-slider{
+    border-radius: 5px;
  }
 
  .news-description {
@@ -292,12 +340,16 @@
      text-align: center;
      margin: 1rem.0;
  }
+
  .news-container {
-            background-color: #c1dbee;
-            border: 2px solid #000000;
-            padding: 20px;
-            border-radius: 8px;
-            width: 80%;
-            margin: auto;
-            box-shadow: 0 2px 8px rgba(40, 75, 98, 0.1);
+     background-color: #c1dbee;
+     border: 2px solid #000000;
+     padding: 20px;
+     border-radius: 8px;
+     width: 80%;
+     margin: auto;
+     box-shadow: 0 2px 8px rgba(40, 75, 98, 0.1);
+ }
+ .marquee view{
+    background-color: #0288d1;
  }
