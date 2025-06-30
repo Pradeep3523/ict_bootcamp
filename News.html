@@ -15,138 +15,28 @@
             <ul>
                 <li><a href="index.html">Home</a></li>
                 <li><a href="about.html">About</a></li>
+                <li><a href="Bod.html">BOD</a></li>
                 <li><a href="teachers.html">Teachers</a></li>
                 <li><a href="News.html">News</a></li>
                 <li><a href="Result.html">Result</a></li>
                 <li><a href="Contact.html">Contact</a></li>
-                <li><a href="Bod.html">BOD</a></li>
             </ul>
         </nav>
     </header>
-    <section id="Home">
-        <marquee direction="left" scrollamount="5">
-            Welcome to our Shiwalaya Secondary School
-        </marquee>
-        <h2>Kushma-Municipality,6 Parbat,Nepal
-        </h2>
-        <p>Where bright futures begin!</p>
-    </section>
-
-    <section class="About">
-        <div class="container">
-            <div class="left">
-                <h2>About Us</h2>
-                <p>Shiwalaya Secondary School is dedicated to excellence in education, offering modern facilities,
-                    experienced
-                    staff, and a nurturing environment that promotes learning and growth for every student.
-                    In the morder age we must need better education for your better education choose Shiwalaya Secondary
-                    School
-                </p>
-                <button><a href="about.html">Learn More</a></button>
-                </p>
-            </div>
-            <div class="right">
-                <img src="images/gate.jpg" alt="">
-            </div>
-        </div>
-    </section>
-
-
-    <section  class="teach">
-        <div class="tech-title">
-            <h1>Our Teachers </h1>
-        </div>
-        <div class="container teacher-main">
-            <div class="teacher">
-                <img src="images/1.jpg" alt="">
-                <h2>name</h2>
-                <p>Principal</p>
-            </div>
-            <div class="teacher">
-                <img src="images/1.jpg" alt="">
-                <h2>name</h2>
-                <p>Principal</p>
-            </div>
-            <div class="teacher">
-                <img src="images/1.jpg" alt="">
-                <h2>name</h2>
-                <p>Principal</p>
-            </div>
-            <div class="teacher">
-                <img src="images/1.jpg" alt="">
-                <h2>name</h2>
-                <p>Principal</p>
-            </div>
-            <div class="teacher">
-                <img src="images/1.jpg" alt="">
-                <h2>name</h2>
-                <p>Principal</p>
-            </div>
-            <div class="teacher">
-                <img src="images/1.jpg" alt="">
-                <h2>name</h2>
-                <p>Principal</p>
-            </div>
-        </div>
-    </section>
-
+    <div class="news-container">
+    <div class="news-title">📢 Latest School Announcements</div>
     
-    <Section id="Result">
-        <h2>Result</h2>
-    </Section>
-    <section id="Contact">
-        <h2>Contact Us</h2>
-        <p>Email: Shiwalayaseeecschool@gmail.com</p>
-        <p>Phone: 9765671782</p>
-        <p>Address: Kushma Municipality-6, Parbat Nepal</p>
+    <marquee behavior="scroll" direction="left" scrollamount="5">
+        🎓 Parent-Teacher Meeting on July 10th | 🏆 Annual Sports Day on July 20th | 📚 Mid-Term Exams Start August 5th | 🍽️ School Canteen Menu Updated | 🚌 New Bus Routes Available on School Portal
+    </marquee>
 
+    <p class="news-description">
+        Welcome to the official news feed of Shiwalaya Secondary Schooll! Here you'll find the latest updates, important announcements,events. Stay informed about exams, extracurricular activities, and important dates at the school year. Be sure to check this section regularly so you don’t miss any exciting news.
+    </p>
+</div>
         <footer>
             <p>&copy; 2025 Shiwalaya Secondary School"Better Education Excellent Life"</p>
         </footer>
-        <h3> For your Online Form submission</h3>
-        <form onsubmit="return myfunction()" name="myName">
-            <div class="form-group">
-                <label for="name">Name</label>
-                <input type="text" id="name" name="name">
-            </div>
-            <div class="form-group">
-                <label for="address">Address</label>
-                <input type="text" id="address" name="address">
-            </div>
-            <div class="form-group">
-                <label for="email">Email</label>
-                <input type="text" id="email" name="email">
-            </div>
-            <p id="message"></p>
-            <button type="submit">Submit</button>
-        </form>
-        <button onclick="myfunction()">Final submission</button>
-
-
-        <script>
-            function learnMore() {
-            }
-            function myfunction() {
-                let name = document.myName.name.value;
-                let address = document.myName.address.value;
-                let email = document.myName.email.value;
-                console.log(name, address, email, 'name address email')
-                if (!name) {
-                    document.getElementById("message").innerHTML = "<p style='color:red;'>Name is requried</p>";
-                    return false;
-                } else if (!address) {
-                    document.getElementById("message").innerHTML = "<p style='color:red;'>Address is requried</p>";
-                    return false;
-                } else if (!email) {
-                    document.getElementById("message").innerHTML = "<p style='color:red;'>Email is requried</p>";
-                    return false;
-                } else {
-                    document.getElementById("message").innerHTML = "Thank you for your submission!";
-                    return true;
-
-                }
-            }
-        </script>
 </body>
 
 </html>
